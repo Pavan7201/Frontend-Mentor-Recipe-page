@@ -4,16 +4,25 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: hsl(330, 53%, 94%);
+    background-color: hsl(330, 100%, 98%);
+}
+
+.img-container{
+    width: 70%;
+    max-width: 800px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 130px 0px 0px 0px;
+    padding: 40px 40px 0px 40px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .container {
     width: 70%;
     max-width: 800px;
     background-color: hsl(0, 0%, 100%);
-    margin: 130px 0px 130px 0px;
+    margin: 0px 0px 130px 0px;
     padding: 40px;
-    border-radius: 20px;
+    border-radius:0px 0px 20px 20px;
 }
 
 p, li{
@@ -52,7 +61,7 @@ h3{
 }
 
 .ingredients ul {
-    margin-top: 0.1em; /* Adjusts the space between <h2> and <ul> */
+    margin-top: 0.1em;
 }
 
 .instructions li{
@@ -106,4 +115,88 @@ tr {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 375px) {
+    html, body {
+        background-color: white;
+        margin: 0; 
+        padding: 0;
+    }
 
+    .img-container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    img {
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .container{
+        width: auto;
+        margin: 0;
+    }
+
+    .caption h1, p{
+        margin-top: 0;
+    }
+
+    .preparation h3{
+        display: inline;
+        padding: 0;
+    }
+
+    .preparation ul{
+        margin: 0;
+    }
+
+    .preparation ul li{
+        line-height: 2;
+        padding: 0;
+    }
+
+    .ingredients h2{
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ingredients ul{
+        margin: 0;
+    }
+
+    .ingredients ul li{
+        padding: 0;
+    }
+
+    .instructions h2{
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+
+    .instructions{
+        display: inline;
+    }
+
+    .instructions ol{
+        margin: 0;
+    }
+
+    .instructions ol li{
+        padding:0;
+    }
+
+    .nutrition h2{
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    
+    p, li, h2, h3, .preparation, .ingredients, .instructions, .nutrition {
+        width: 100%; 
+        padding: 10px; 
+        box-sizing: border-box;
+    }
+}
