@@ -171,9 +171,9 @@ tr {
     }
 
     .instructions h2{
-        display: inline;
         padding: 0;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
     .instructions{
@@ -193,7 +193,7 @@ tr {
         margin: 0;
         padding: 0;
     }
-    
+
     p, li, h2, h3, .preparation, .ingredients, .instructions, .nutrition {
         width: 100%; 
         padding: 10px; 
