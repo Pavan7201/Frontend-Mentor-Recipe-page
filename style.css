@@ -194,6 +194,10 @@ tr {
         padding: 0;
     }
 
+    .attribution{
+        margin: 0px 0px 30px 0px;
+    }
+
     p, li, h2, h3, .preparation, .ingredients, .instructions, .nutrition {
         width: 100%; 
         padding: 10px; 
